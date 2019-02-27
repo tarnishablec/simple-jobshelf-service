@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: fortjoy-service-jobshelf
+  data:
+    mongodb:
+      uri: mongodb://104.238.136.245:27017,104.238.136.245:27018,104.238.136.245:27019/boss_job_shelf
+      repositories:
+        type: reactive
+      field-naming-strategy: org.springframework.data.mapping.model.CamelCaseSplittingFieldNamingStrategy
+server:
+  port: 27117
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
